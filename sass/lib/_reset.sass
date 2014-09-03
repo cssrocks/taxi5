@@ -1,0 +1,95 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	vertical-align: baseline
+
+// HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, menu, nav, section, summary
+	display: block
+
+// * { Box-sizing: Border-box }
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+// prefixes are pretty much dead: http://caniuse.com/#feat=css3-boxsizing
+*, *:before, *:after
+	box-sizing: inherit
+
+html
+	box-sizing: border-box
+
+html, body
+	height: 100%
+
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+	&:before,
+	&:after
+		content: ''
+		content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+img
+	border: none
+
+// Remove the gray background color from active links in IE 10.
+a
+	background: transparent
+	// Improve readability when focused and also mouse hovered in all browsers.
+	&:active,
+	&:hover,
+	&:focus
+		outline: 0
+
+b, strong
+	font-weight: bold
+
+textarea
+	overflow: auto
+
++iphone
+	*
+		-webkit-text-size-adjust: none
+
+button,
+input
+	margin: 0
+	padding: 0
+	border: 0
+
+button,
+input[type="submit"]
+	-webkit-appearance: button
+	cursor: pointer
+
+// Re-set default cursor for disabled elements.
+button[disabled],
+html input[disabled]
+	cursor: default
+
+// Remove inner padding and border in Firefox 4+.
+button::-moz-focus-inner,
+input::-moz-focus-inner
+	border: 0
+	padding: 0
