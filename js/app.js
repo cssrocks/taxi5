@@ -28,6 +28,7 @@ head.ready(function() {
 					$(this).parallax('50%', -0.3, false);
 			});
 		};
+
 	});
 
 });
