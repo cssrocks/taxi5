@@ -1,0 +1,72 @@
+/* Author: Denis Pismenny at http://pismenny.pro */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+html { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+img { border: none; }
+
+a { background: transparent; }
+a:active, a:hover, a:focus { outline: 0; }
+
+b, strong { font-weight: bold; }
+
+textarea { overflow: auto; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+button, input { margin: 0; padding: 0; border: 0; }
+
+button, input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+
+button[disabled], html input[disabled] { cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+@font-face { font-family: "Proxima Nova Bold"; src: url("../fonts/proxima_nova_bold.eot"); src: url("../fonts/proxima_nova_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_bold.woff") format("woff"), url("../fonts/proxima_nova_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+
+.is-homepage .header { position: absolute; top: 0; left: 0; width: 100%; z-index: 100; }
+.is-homepage .header .header__in { *zoom: 1; max-width: 1125px; margin: 0 auto; padding: 31px 0; height: 60px; line-height: 60px; }
+.is-homepage .header .header__in:before, .is-homepage .header .header__in:after { content: " "; display: table; }
+.is-homepage .header .header__in:after { clear: both; }
+@media only screen and (max-width: 1270px) { .is-homepage .header .header__in { width: auto; padding-right: 20px; padding-left: 20px; } }
+.is-homepage .header .header__main { float: left; margin-right: 40px; *zoom: 1; }
+.is-homepage .header .header__main:before, .is-homepage .header .header__main:after { content: " "; display: table; }
+.is-homepage .header .header__main:after { clear: both; }
+.is-homepage .header .header__logo { float: left; margin-right: 30px; }
+.is-homepage .header .header__logo a { display: inline-block; vertical-align: middle; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; background: url("../img/svg/logo_wh.svg") no-repeat 0 0; -webkit-background-size: 170px 32px; -moz-background-size: 170px 32px; -o-background-size: 170px 32px; background-size: 170px 32px; width: 170px; height: 32px; }
+.is-homepage .header .header__lang { float: left; }
+.is-homepage .header .header__lang li { display: inline-block; }
+.is-homepage .header .header__lang li.is-active a { border-radius: 40px; border: 1px solid rgba(255, 255, 255, 0.4); }
+.is-homepage .header .header__lang a { display: inline-block; padding: 0 8px; font-size: 14px; color: white; height: 33px; line-height: 33px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; border-radius: 40px; border: 1px solid transparent; }
+.is-homepage .header .header__nav { float: left; font-size: 0; }
+.is-homepage .header .header__nav li { display: inline-block; vertical-align: middle; margin-left: 35px; }
+.is-homepage .header .header__nav li:first-child { margin-left: 0; }
+.is-homepage .header .header__nav a { font-size: 14px; text-transform: uppercase; color: white; text-decoration: none; }
+.is-homepage .header .header__actions { float: right; font-size: 0; }
+.is-homepage .header .header__actions a { display: inline-block; vertical-align: middle; font-size: 14px; text-decoration: none; color: white; text-transform: uppercase; margin-left: 30px; }
+.is-homepage .header .header__actions a:first-child { margin-left: 0; }
+
+.promo { position: relative; display: table; width: 100%; color: white; }
+.promo .promo__bg { background-image: url("../img/bg.jpg"); position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.promo .promo__in { position: relative; max-width: 990px; margin: 205px auto 75px; }
+@media only screen and (max-width: 900px) { .promo .promo__in { width: auto; padding-right: 20px; padding-left: 20px; } }
+.promo .promo__slogan { font-family: "Proxima Nova Bold", Arial, sans-serif; font-weight: normal; font-style: normal; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: default; margin-bottom: 40px; font-size: 120px; text-align: center; }
+@media only screen and (max-width: 1024px) { .promo .promo__slogan { font-size: 80px; } }
+.promo .promo__pic { max-width: 845px; margin: 0 auto; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.promo .promo__pic img { display: block; width: 100% \9; max-width: 100%; height: auto; }

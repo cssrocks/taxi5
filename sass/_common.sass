@@ -2,3 +2,124 @@ body
 	font-family: Arial, sans-serif
 	font-size: 12px
 	line-height: 1
+	+font-smoothing
+
+.is-homepage
+	.header
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 100
+		.header__in
+			+clr
+			max-width: 1125px
+			margin: 0 auto
+			padding: 31px 0
+			height: 60px
+			line-height: 60px
+			+r(1270)
+				width: auto
+				padding-right: 20px
+				padding-left: 20px
+		.header__main
+			float: left
+			margin-right: 40px
+			+clr
+		.header__logo
+			float: left
+			margin-right: 30px
+			a
+				display: inline-block
+				vertical-align: middle
+				+hidetext
+				+svg(logo_wh, 170, 32)
+		.header__lang
+			float: left
+			li
+				display: inline-block
+				&.is-active
+					a
+						border-radius: 40px
+						border: 1px solid rgba(#fff, .4)
+			a
+				display: inline-block
+				padding: 0 8px
+				font-size: 14px
+				color: #fff
+				height: 33px
+				line-height: 33px
+				letter-spacing: 1px
+				text-transform: uppercase
+				text-decoration: none
+				border-radius: 40px
+				border: 1px solid transparent
+		.header__nav
+			float: left
+			font-size: 0
+			li
+				display: inline-block
+				vertical-align: middle
+				margin-left: 35px
+				&:first-child
+					margin-left: 0
+			a
+				font-size: 14px
+				text-transform: uppercase
+				color: #fff
+				text-decoration: none
+		.header__actions
+			float: right
+			font-size: 0
+			a
+				display: inline-block
+				vertical-align: middle
+				font-size: 14px
+				text-decoration: none
+				color: #fff
+				text-transform: uppercase
+				margin-left: 30px
+				&:first-child
+					margin-left: 0
+
+.promo
+	position: relative
+	display: table
+	width: 100%
+	color: #fff
+	.promo__bg
+		background-image: url('../img/bg.jpg')
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		+cover
+	.promo__in
+		position: relative
+		max-width: 990px
+		margin: 205px auto 75px
+		+r(900)
+			width: auto
+			padding-right: 20px
+			padding-left: 20px
+	.promo__slogan
+		+pnb
+		+nosel
+		cursor: default
+		margin-bottom: 40px
+		font-size: 120px
+		text-align: center
+		+r(1024)
+			font-size: 80px
+	.promo__pic
+		max-width: 845px
+		margin: 0 auto
+		+nosel
+		img
+			display: block
+			width: 100% \9
+			max-width: 100%
+			height: auto
+
+

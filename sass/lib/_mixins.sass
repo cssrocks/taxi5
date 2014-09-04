@@ -242,3 +242,9 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 		height: image-height(sprite-file($icons-retina, $sprite)) / 2
 		width: image-width(sprite-file($icons-retina, $sprite)) / 2
 
+=svg($name, $width, $height)
+	background: url("../img/svg/#{$name}.svg") no-repeat 0 0
+	//background-image: inline-image('icons/svg/'+$sprite+'.svg','image/svg'); // to switches sprites to base64, elegant
+	+background-size(#{$width}px #{$height}px)
+	width: #{$width}px
+	height: #{$height}px
