@@ -1,8 +1,9 @@
 body
-	font-family: Arial, sans-serif
+	+pnr
 	font-size: 12px
 	line-height: 1
-	+font-smoothing
+
+
 
 .is-homepage
 	.header
@@ -16,40 +17,43 @@ body
 			max-width: 1125px
 			margin: 0 auto
 			padding: 31px 0
-			height: 60px
-			line-height: 60px
 			+r(1270)
 				width: auto
 				padding-right: 20px
 				padding-left: 20px
 		.header__main
 			float: left
-			margin-right: 40px
+			margin-right: 33px
 			+clr
 		.header__logo
 			float: left
-			margin-right: 30px
+			margin-right: 28px
+			margin-top: 21px
 			a
 				display: inline-block
 				vertical-align: middle
 				+hidetext
-				+svg(logo_wh, 170, 32)
+				+svg(logo, 172, 33)
 		.header__lang
 			float: left
+			margin-top: 16px
 			li
 				display: inline-block
+				vertical-align: top
 				&.is-active
 					a
 						border-radius: 40px
 						border: 1px solid rgba(#fff, .4)
+						padding: 8px
 			a
-				display: inline-block
-				padding: 0 8px
+				+pnl
+				display: block
+				padding: 8px 1px
+				height: 33px
+				line-height: 16px
 				font-size: 14px
 				color: #fff
-				height: 33px
-				line-height: 33px
-				letter-spacing: 1px
+				letter-spacing: 0.07em
 				text-transform: uppercase
 				text-decoration: none
 				border-radius: 40px
@@ -57,37 +61,89 @@ body
 		.header__nav
 			float: left
 			font-size: 0
+			margin-top: 16px
 			li
 				display: inline-block
-				vertical-align: middle
-				margin-left: 35px
+				vertical-align: top
+				margin-left: 18px
 				&:first-child
 					margin-left: 0
+				&.is-active
+					a
+						background: #fdb233
 			a
+				+pnb
+				display: block
+				padding: 8px
+				height: 33px
+				line-height: 16px
 				font-size: 14px
-				text-transform: uppercase
 				color: #fff
+				letter-spacing: 0.07em
+				text-transform: uppercase
 				text-decoration: none
+				border-radius: 40px
+				border: 1px solid transparent
 		.header__actions
 			float: right
 			font-size: 0
-			a
+			li
 				display: inline-block
-				vertical-align: middle
-				font-size: 14px
-				text-decoration: none
-				color: #fff
-				text-transform: uppercase
-				margin-left: 30px
+				margin-left: 28px
 				&:first-child
 					margin-left: 0
+			a
+				display: block
+	.btn-order
+		border-radius: 10px
+		border: 2px solid #ffb31a
+		font-size: 14px
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+		line-height: 17px
+		letter-spacing: 0.14em
+		padding: 22px 27px 18px
+		text-transform: uppercase
+		text-decoration: none
+		+transition(all .3s)
+		&:hover
+			background: #ffb31a
+	.btn-signin
+		letter-spacing: 0.08em
+		font-size: 14px
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+		i
+			position: relative
+			top: -3px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 7px
+			+svg(signin, 24, 24)
 
-.promo
++keyframes(drive)
+	0%
+		+transform(translateX(-150%))
+	50%
+		+transform(translateX(8%))
+	65%
+		+transform(translateX(-4%))
+	80%
+		+transform(translateX(4%))
+	95%
+		+transform(translateX(-2%))
+	100%
+		+transform(translateX(0%))
+
+.intro
 	position: relative
 	display: table
 	width: 100%
 	color: #fff
-	.promo__bg
+	min-height: 900px // TMP
+	.intro__bg
 		background-image: url('../img/bg.jpg')
 		position: absolute
 		top: 0
@@ -95,27 +151,43 @@ body
 		bottom: 0
 		left: 0
 		+cover
-	.promo__in
+		background-position: 50% 0px
+	.intro__in
 		position: relative
 		max-width: 990px
-		margin: 205px auto 75px
+		margin: 210px auto 75px
 		+r(900)
 			width: auto
 			padding-right: 20px
 			padding-left: 20px
-	.promo__slogan
+	.intro__slogan
 		+pnb
 		+nosel
 		cursor: default
-		margin-bottom: 40px
+		margin-bottom: 53px
 		font-size: 120px
 		text-align: center
+		span
+			position: relative
+			display: inline-block
+			&:before
+				position: absolute
+				top: -1px
+				right: 10px
+				content: ""
+				+svg(taxi, 39, 20)
 		+r(1024)
 			font-size: 80px
-	.promo__pic
+			span
+				&:before
+					right: 7px
+					+svg(taxi, 27, 14)
+	.intro__pic
 		max-width: 845px
 		margin: 0 auto
 		+nosel
+		&.is-animate
+			+animation(drive 1s ease-in-out)
 		img
 			display: block
 			width: 100% \9

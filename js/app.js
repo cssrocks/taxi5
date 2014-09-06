@@ -24,11 +24,13 @@ head.ready(function() {
 
 		// Parallax
 		if(!isMobile.any()) {
-			$('.js-parallax-promo').each(function() {
+			$('.js-parallax-intro').each(function() {
 					$(this).parallax('50%', -0.3, false);
 			});
 		};
 
 	});
+
+	$('.header').addClass('h' + (new Date().getHours()));
 
 });
